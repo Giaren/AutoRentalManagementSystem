@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D5A79759-F232-4808-A44F-F8B28318D9E4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ARMSClientApp</RootNamespace>
+    <AssemblyName>ARMSClientApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EnterpriseResourcePlanning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnterpriseResourcePlanning.Designer.cs">
+      <DependentUpon>EnterpriseResourcePlanning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreditCardDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreditCardDelete.Designer.cs">
+      <DependentUpon>frmCreditCardDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreditCardList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreditCardList.Designer.cs">
+      <DependentUpon>frmCreditCardList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreditCardMSForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreditCardMSForm.Designer.cs">
+      <DependentUpon>frmCreditCardMSForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreditCardRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreditCardRegistration.Designer.cs">
+      <DependentUpon>frmCreditCardRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreditCardSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreditCardSearch.Designer.cs">
+      <DependentUpon>frmCreditCardSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreditCardUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreditCardUpdate.Designer.cs">
+      <DependentUpon>frmCreditCardUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainWelcomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainWelcomeForm.Designer.cs">
+      <DependentUpon>frmMainWelcomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EnterpriseResourcePlanning.resx">
+      <DependentUpon>EnterpriseResourcePlanning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreditCardDelete.resx">
+      <DependentUpon>frmCreditCardDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreditCardList.resx">
+      <DependentUpon>frmCreditCardList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreditCardMSForm.resx">
+      <DependentUpon>frmCreditCardMSForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreditCardRegistration.resx">
+      <DependentUpon>frmCreditCardRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreditCardSearch.resx">
+      <DependentUpon>frmCreditCardSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreditCardUpdate.resx">
+      <DependentUpon>frmCreditCardUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainWelcomeForm.resx">
+      <DependentUpon>frmMainWelcomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ARMSBOLayer\ARMSBOLayer.csproj">
+      <Project>{70e6f835-f21d-4dab-8e43-f169a74ba157}</Project>
+      <Name>ARMSBOLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
